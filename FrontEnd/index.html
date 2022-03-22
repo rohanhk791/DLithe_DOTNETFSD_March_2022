@@ -5,21 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<h1>>, initial-scale=1.0">
     <title>BASISCS OF HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h2>WELCOME TO HTML TAGS</h2>
+<style>
+    body
+    {
+        background-image: url("assets/img1.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+</style>
+    <h2 style="background-color:forestgreen;font-family: 'Times New Roman', Times, serif;"><center>WELCOME TO HTML TAGS</center></h2>
     <hr>
-    <pre>HTML 
-          CSS 
+    <style>
+        pre::first-letter
+        {
+            color: rgb(255, 0, 34);
+            font-size: large;
+        } 
+        pre::first-line
+            { 
+                background-color: rgb(255, 115, 0);
+            }
+        ::marker
+            {
+                color:rgba(41, 10, 70, 0.027);
+            }
+    </style>
+    <pre>HTML HyperText Markup Language
+          CSS Cascading Style Sheet
     </pre>
     <p>HTML is a (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
     <br>
-    <span style="background-color: rgb(21, 231, 32);">Good Evening Guys</span>
+    <span style="background-color: rgb(21, 231, 32);">Good Afternoon Guys</span>
     <br>
     <img src="assets/download.png" height="250px" width="250px" alt="HTML">
     <br>
     <h1><a href="https://www.google.com/" target="_blank" title="Google Search">Google</a></h1>
     <br>
+    <style>
+       
+        h3
+        {
+            text-align: right;
+            background-color: rgb(0, 195, 255);
+            color:aliceblue;
+            text-decoration: underline;
+            font-size: larger;
+        }
+        li
+        {
+            color: blue;
+            font-size: large;
+        }
+   
+    </style>
+    <h3><center>Welcome TO DLithe Bootcamp</center></h3>
     <ol type="1">
         <li>Bangalore</li>
         <li>Mandya</li>
@@ -38,7 +80,7 @@
         <ul>
             <li><a href="assets/css.png">CSS</a></li>
         </ul>
-    </ol>
+    </ol>     
     <dl>
         <dt><b>HTML</b></dt>
         <dd>Hypertext Markup Language</dd>
@@ -56,14 +98,74 @@
     </audio>
 
     <br>
-    <table border="1">
-        <tr><th>ID</th><th>Name</th><th colspan="2">Model</th></tr>
-        <tr><td>1</td><td>swift</td><td>2021</td></tr>
-        <tr><td>2</td><td>kia</td><td>2021</td><td>2022</td></tr>
-        <tr><td>3</td><td>Audi</td><td>2020</td><td>2021</td><td>2022</td></tr>
-        <tr><td>5</td><td>BMW</td><td>2022</td></tr>
-    </table>
-    <br>
+    <style>
+        #city {
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #city td, #city th {
+          border: 1px solid rgb(128, 79, 79);
+          padding: 8px;
+        }
+        
+        #city tr:nth-child(even){background-color: #d2eb77;}
+        
+        #city tr:hover {background-color: rgb(146, 185, 82);}
+        
+        #city th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #196938;
+          color: rgba(255, 255, 255, 0.226);
+        }
+        </style>
+    <table id="city">
+        <tr>
+          <th>city</th>
+          <th>pincode</th>
+          <th>state</th>
+        </tr>
+        <tr>
+          <td>Bangalore</td>
+          <td>560001</td>
+          <td>karnataka</td>
+        </tr>
+        <tr>
+          <td>Mandya</td>
+          <td>571401</td>
+          <td>karnataka</td>
+        </tr>
+        <tr>
+          <td>mysore</td>
+          <td>570001</td>
+          <td>karnataka</td>
+        </tr>
+        <tr>
+          <td>ramnagar</td>
+          <td>562159</td>
+          <td>karnataka</td>
+        </tr>
+        <tr>
+          <td>channapatna</td>
+          <td>562160</td>
+          <td>karnataka</td>
+        </tr>
+        <tr>
+          <td>kolar</td>
+          <td>563101</td>
+          <td>karnataka</td>
+        </tr>
+        <tr>
+          <td>chikmagalur</td>
+          <td>577101</td>
+          <td>karnataka</td>
+        </tr>
+        
+      </table>
     
+    <br>
 </body>
 </html>
