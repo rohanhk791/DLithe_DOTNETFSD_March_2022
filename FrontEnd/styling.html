@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Concepts</title>
+    <style>
+        body
+        {
+            background: #ff5f6d;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #ff5f6d, #ffc371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        
+        p.class
+        {
+            border-color: rgb(0, 255, 98) rgb(26, 25, 25) rgb(64, 100, 64);
+            border-style: dotted solid dashed;
+    
+        }
+        p.class1
+        {
+            border-style: dotted dashed inset outset;
+            border-color: green yellow red blue;
+            outline-style: double;
+            outline-width: 2px;
+            outline-offset: 3px;
+            padding: 3px;
+        }
+        p.class2
+        {
+            border-style: groove dotted;
+            border-radius: 10px 5px;
+            border-color: red blue;
+        }
+        p.class3
+        {
+            border-style: double;
+            border-width: 5px;
+            border-color: aqua;
+            border-radius: 15px; 
+            text-shadow: 3px 4px 2px  rgb(202, 127, 127), 5px 6px 2px rgb(151, 151, 216);
+            
+        }
+
+        p.class4
+        {
+            border-style: dotted;
+            border-width: 3px;
+            border-radius: 10px;
+            opacity: 1;
+            background-color: #ebd7e8; 
+        }
+
+    </style>
+    </head>
+    <body>
+        <h1><center><b>CSS</b></center></h1></h>
+        <p class="class">html</p>
+        <p class="class1">css</p>
+        <p class="class3">windows</p>
+        <p class="class4">microsoft</p>
+
+    </body>
+    </html>
