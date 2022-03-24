@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        background-image: url("assets/image3.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+    }
+body
+        .absolute
+        {
+            border-style: dashed;
+            height: 320px;
+            width:200px;
+            position:absolute;
+            left:150px;
+            top:100px;
+            background-color: rgb(231, 240, 234);
+            transition: width 3s linear;
+        }
+        .relative
+        {
+            position: relative;
+            top:350px;
+            border-style:solid;
+            width:500px;
+            height:500px;
+        }
+        .absolute:hover
+        {
+            width:300px;
+            
+        }
+        img
+        {
+            transition: width 1s,height 1s,transform 2s;
+
+        }
+        img:hover
+        {
+            width:150px;
+            height:150px;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="assets/img9.jpg" height="75px" width="75px">
+    <hr>
+    <br>
+    <br>
+    <div class="absolute">The Moon is a barren, rocky world without air and water. It has dark lava plain on its surface. The Moon is filled wit craters. It has no light of its own. It gets its light from the Sun. The Moo keeps changing its shape as it moves round the Earth. It spins on its axis in 27.3 days stars were named after the Edwin Aldrin were the first ones to set their foot on the Moon on 21 July 1969 They reached the Moon in their space craft named Apollo II.</div>
+    <div class="relative">
+        <p class="absolute">The sun is a huge ball of gases. It has a diameter of 1,392,000 km. It is so huge that it can hold millions of planets inside it. The Sun is mainly made up of hydrogen and helium gas. The surface of the Sun is known as the photosphere. The photosphere is surrounded by a thin layer of gas known as the chromospheres. Without the Sun, there would be no life on Earth. There would be no plants, no animals and no human beings. As, all the living things on Earth get their energy from the Sun for their survival.</p>
+    </div>    
+</body>   
+</body>
+</html>

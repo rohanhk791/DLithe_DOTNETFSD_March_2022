@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+    body
+        {
+            background: #1f4037; 
+            background: -webkit-linear-gradient(to right, #1f4037, #99f2c8); 
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+        }
+    </style>
+    <style>
+        .transform
+        {
+            transform:matrix(1,0,1,1,1,1);
+            position:absolute;
+            left:100px; 
+            width:100px;
+            transition: width 1s; 
+            transition-timing-function: ease; 
+        }
+        .transform:hover
+        {
+                width:300px;
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="ani"></div>-->
+    <div class="transform" style="top:400px;border-style: dashed;background-color: beige;height: 100px;"></div>
+
+    
+</body>
+</html>
