@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Display</title>
+</head>
+<style>
+    body{
+    background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4); 
+    }
+    
+</style>
+<h><center><b>Employee Detials</b></center><h></h>
+<body>
+    <p id="username"></p>
+    <p id="emp"></p>
+    <p id="emp1"></p>
+    <p id="type"></p>
+    <script>
+        var name = "Prajwal";
+        const EmpDetails=
+        {
+            empid:6,
+            empname:"manohar",
+            empdesignation:"software enginner"
+        };
+        document.getElementById("username").innerHTML=name;
+        document.getElementById("emp").innerHTML="Employee " + EmpDetails.empid + "'s name is " +EmpDetails.empname;
+        document.getElementById("emp1").innerHTML=EmpDetails.empname + " is in " +EmpDetails.empdesignation + " department";
+        document.getElementById("type").innerHTML=
+        typeof "hi" + "<br>" + typeof 10 + 
+        "<br>" + typeof 3.14
+        + "<br>" + typeof (3+4)
+        + "<br>" + typeof (1234e5)
+        + "<br>" +typeof(null);
+        
+    </script>
+</body>
+</html>
