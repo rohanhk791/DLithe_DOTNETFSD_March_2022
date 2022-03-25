@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h><center><b>Courses</b></center></h>
+<style>
+body
+    {
+        background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bdc3c7, #2c3e50); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bdc3c7, #2c3e50); 
+    }
+</style>
+<body>
+    <script>
+        var courses=["DotNet","HTML","CSS","JS","React"];
+        document.write(courses+"<br>","<br>")
+        document.write(courses.length +"<br>","<br>");
+        
+        document.write(courses.push("Angular","Business Layer","Domain","Agile development")+"<br>","<br>");
+        document.write(courses+"<br>","<br>");
+
+        courses.unshift("Bootstratp","Sql server");
+        document.write(courses+"<br>","<br>");
+
+        var last=courses.pop();
+        document.write(last+"<br>","<br>")
+        document.write(courses+"<br>","<br>");
+
+        var first=courses.shift();
+        document.write(first+"<br>","<br>");
+        document.write(courses+"<br>"+"<hr>");
+
+
+        var citys=["bangalore","mysore","mandya","mangalore"];
+
+        !//splice(start,deletecount,item1,item2)
+
+        document.write(citys+"<br>");
+        citys.splice(1,0,'karnataka');
+        document.write(citys+"<br>");
+        citys.splice(4,1,'india');
+        document.write(citys+"<br>");
+        citys.splice(3,2,'mandya','mangalore');
+        document.write(citys+"<br>"+"<hr>");
+
+        var numbers1=["101","102","103"];
+        var numbers2=["104","105","106"];
+        var numbers=numbers1.concat(numbers2);
+        document.write(numbers+"<br>");
+        var num=numbers.concat("107","108");
+        document.write(num+"<br>");
+        var num1=num.concat(109,110);
+        document.write(num1+"<br>");
+
+        var iterateindex =num1.entries();
+        for(var item of iterateindex)
+        {
+            document.write(item+"<br>");
+        }
+
+        num1.reverse();
+        document.write(num1+"<br>"+"<hr>");
+
+        var laptops=["dell","hp","lenovo","asus"];
+        var result=laptops.indexOf("Mac");
+        document.write(result+"<br>");
+        var result1=laptops.lastIndexOf("Mac");
+        document.write(result1+"<br>"+"<hr>");
+
+        document.write(laptops.toString()+"<br>");
+        document.write(laptops.join()+"<br>");
+        
+        
+
+        
+</script>
+</body>
+</head>
+</html>

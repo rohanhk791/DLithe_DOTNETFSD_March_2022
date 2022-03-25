@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body
+    {
+        background: #7f7fd5; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    }
+</style>
+<h><center><b>Strings</b></center></h>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        var str1="Hello Good Morning";
+        var str2="   Welcome   ";
+        var str3= "\"Javascript\"string concepts"
+        var str4="html css and Javascript";
+        
+        document.getElementById("demo").innerHTML=str1 + str2 +"<br>";   
+        document.getElementById("demo1").innerHTML=str3;   
+        
+        var result=str4.indexOf("Javascript");
+        document.getElementById("demo2").innerHTML=result;  
+        
+        var result1=str4.lastIndexOf("Javascript");
+        document.write(result1 + "<br>");
+        
+        document.write(str1.concat(str2) + "<br>");
+
+        document.write(str1.charAt(4) +"<br>");
+        
+        document.write(str1.toLowerCase() + "<br>");
+
+        document.write(str2.toUpperCase() +"<br>");
+    
+        var str5="    visual studio code    ";
+        var str6=str5.slice(2,17);
+        document.write(str6 +"<br>");
+
+        var str7=str5.trim();
+        document.write(str7 +"<br>");
+
+        var str8=str7.slice(2,6);
+        document.write(str8 +"<br>");
+       
+        var names="html css js";
+        document.write(names.split(" ")+"<br>");
+
+        for(var i=0;i<9;i++)
+            document.write(names[i]);
+        
+        document.write("<br>");
+
+        for(var a of names)
+            document.write(a);
+    </script>   
+</body>
+</html>
+
+
+
