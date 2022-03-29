@@ -74,7 +74,20 @@ body
 
         document.write(laptops.toString()+"<br>");
         document.write(laptops.join()+"<br>");
-        
+
+        var result2=os.slice(1,5);
+        document.write(result2+"<br>");
+        var result3=os.slice(-5,-1);
+        document.write(result3+"<br>");
+
+        //sort
+        var values=[6,2,8,1,4,7,0];
+        document.write(values.sort()+"<br>");
+
+        //filter
+        var empname=["John","Peter","Sam","Paul","Jancy","Mary"];
+        var result4=empname.filter(empname=>empname.length==5);
+        document.write(result4);
         
 
         
