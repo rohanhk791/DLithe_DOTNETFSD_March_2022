@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details</title>
+</head>
+<body>
+    <h1>Booking Details </h1>
+    <script>
+        class details
+        {
+            //Constructor with 5 parameters
+            constructor(name,ticket_no,phone,email,address,)
+            {
+                
+                this.name=name;
+                this.ticket_no=ticket_no;
+                this.phone=phone;
+                this.email=email;
+                this.address=address;
+
+            }
+            //Function
+            details()
+            {
+                return this.name + " "+ this.ticket_no + " "+ this.phone +" "+ this.email + " "+ this.address;
+            }
+        }
+        //instance/object creation
+        var det=new details("Rohan","AC100012",6362994070,"rohanhk2@gmail.com","mandya");
+        console.log(det.name);
+        console.log(det.ticket_no);
+        console.log(det.phone);
+        console.log(det.email);
+        console.log(det.address);
+        console.log(det.Details());
+    </script>
+    
+</body>
+</html>

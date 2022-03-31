@@ -4,19 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS PROMPT</title>
+    <title>JAVASCRIPT PROMPT</title>
+<style>
+    body
+        {
+                background: #3e5151; /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #3e5151, #decba4); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #3e5151, #decba4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+</style>
 </head>
+<center>
 <body>
-    <button type="button" onclick="submit()">Submit</button>
-    <button type="button" onclick="AskName()">Click me</button>
+    <h1>Click here to exit</h1>
+    <button type="button" onclick="submit()">Exit</button>
+    <br>
+    <h2>click here to confirm the ticket</h2>
+    <button type="button" onclick="AskName()">confirm ticket</button>
+    <br>
+    <h3>click here to book the ticket</h3>
+    <button type="button" onclick="GetList()">book tickets</button>
+    <br>
+    <h4></h4>
+    <button type="button" onclick="ChangeAnchorAttributes()">Anchor Demo</button>
+    <br>
+    <h5>click here to view the booking details</h5>    
+    <button type="button" onclick="ChangeParaContent()">booking Details</button>
+    <br>
+    <h6>click here to open website</h6>
+    <button type="button" onclick="Microsoft()">Open booking Website</button>
+    <!--Creating a List-->
+    <ul id="list">
+        <li>Flight booking</li>
+        <li>Train booking</li>
+        <li>Hotel booking</li>
+    </ul>
+    <hr>
+    <a id="myAnchor" href="http://www.google.com" title="Google">Google Search Engine</a>
+    <br>
+    <p id="para" style="color:blue"></p>
+    <input type="text" id="cname" placeholder="Enter the booking Name">
+    <p>Hello good morning!!! How is the <i id="course">booking</i></p>
+    <p onclick="Microsoft()">booking</p>
     <script>
+        function Microsoft()
+        {
+            window.open("http://www.booking.com")
+        }
+        function ChangeParaContent()
+        {
+            var coursename=document.getElementById("cname").value;
+            document.getElementById("course").innerHTML=coursename;
+
+        }
+        //Change the Anchor tag attributes
+        function ChangeAnchorAttributes()
+        {
+            document.getElementById("myAnchor").innerHTML="booking.com";
+            document.getElementById("myAnchor").href="http://www.booking.com";
+            document.getElementById("myAnchor").target="_blank";
+            document.getElementById("myAnchor").title="Booking";
+        }
+        //Retrieve list items from <li> and display them in <p> tag
+        function GetList()
+        {
+           var listitems= document.getElementById("list").innerHTML;
+           document.getElementById("para").innerHTML=listitems;
+        }
         function submit()
         {
             var msg=confirm("Do you want to Exit?")
             if (msg)
             {
                 alert ("See you soon!!!")
-                window.location="assets/homepage.html";
+                window.location="https://www.google.com";
             }
             else
             {
@@ -28,9 +91,9 @@
         function AskName()
         {
             var name=prompt("Please Enter your name?");
-            alert ("Hello "+name);
+            alert ("Hello your tickets is confirm"+name);
         }
     </script>
-    
+    </center>
 </body>
 </html>

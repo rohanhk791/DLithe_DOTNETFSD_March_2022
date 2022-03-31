@@ -10,7 +10,7 @@
    }
    .result {
       font-size: 18;
-      color: blueviolet;
+      color: rgb(6, 12, 4);
       font-weight: 500;
    }
 </style>
@@ -20,9 +20,10 @@
 <h1>Customers Details</h1>
 <div class="result"></div>
 <button class="Btn">CLICK HERE</button>
-<h3>
+<h1>
+Click above for your details.<br>
 Thanks for booking in booking.com
-</h3>
+</h1>
 <script>
    let BtnEle = document.querySelector(".Btn");
    let resEle = document.querySelector(".result");
@@ -43,9 +44,9 @@ Thanks for booking in booking.com
       let person2 = new Person("somesh", 19, "Hyderabad", 636995020);
       person2.welcome();
       let person3 = new Person("rocky", 24, "mumbai", 636995020);
-      person2.welcome();
+      person3.welcome();
       let person4 = new Person("sanjay", 26, "delhi", 9449320203);
-      person2.welcome();
+      person4.welcome();
    });
 </script>
 </body>

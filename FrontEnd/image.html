@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+            <script>
+
+                //You can select all <p> elements on a page like this $("p")
+                $(document).ready(function()
+                {
+                    $("#show").click(function(){
+                    $("#show").hide();
+                    $("#img").show();
+                    $("#hide").show();
+                });
+                
+                $("#show").hide();
+                $("#hide").click(function()
+                {
+                    $("#img").hide();
+                    $("#hide").hide();
+                    $("#show").show();
+                });
+            });
+                </script>
+
+            <img src="assets/mob11.jpg" alt="image" width="250" height="250" id="img"/>
+            <br>
+            <button id="show">show oppo</button>
+            <button id="hide">hide oppo</button>
+</body>
+        <script>
+
+                //You can select all <p> elements on a page like this $("p")
+                $(document).ready(function()
+                {
+                    $("#show").click(function(){
+                    $("#show").hide();
+                    $("#img1").show();
+                    $("#hide").show();
+                });
+                
+                $("#show").hide();
+                $("#hide").click(function(){
+                    $("#img1").hide();
+                    $("#hide").hide();
+                    $("#show").show();
+                });
+            });
+    </script>
+
+            <img1 src="assets/mob21.jpg" id="img1"/>
+            
+            <button id="show">show </button>
+            <button id="hide">hide </button>
+        
+</body>
+</html>
