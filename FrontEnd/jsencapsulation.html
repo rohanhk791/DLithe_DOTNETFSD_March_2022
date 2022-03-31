@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+<body>
+    <h2>ENCAPSULATION-PROTOTYPE</h2>
+    <script>
+        function customer(id,name)
+        {
+            var cusid=id;
+            var cname=name;
+
+            //Encapsulation
+            Object.defineProperty
+            (
+                this,"name",
+                {
+                    get:function()
+                    {
+                        return cname;
+                    },
+                    set:function()
+                    {
+                        this.cname=cname;
+                    }
+            });
+            Object.defineProperty
+            (
+                this,"id",
+                {
+                    get:function()
+                    {
+                        return cusid;
+                    },
+                    set:function()
+                    {
+                        this.cusid=cusid;
+                    }
+            });
+        }
+        var cus =customer(101,"mahesh");
+        console.log(cus.id);
+        console.log(cus.name);
+    </script> 
+    <hr>
+    <h2>ENCAPSULATION-CLASSES</h2>  
+    <script>
+        class person
+        {
+            constructor()
+            {
+                var id;
+                var name;
+            }
+            //Property for id
+            getID()
+            {
+                return this.id;
+            }
+            setID(id)
+            {
+                this.id=id;
+            }
+
+            //Property for name
+            getName()
+            {
+                return this.name;
+            }
+            setName(name)
+            {
+                this.name=name;
+            }
+
+        }
+        var p=new person();
+        //write
+        p.setID(102);
+        p.setName("suresh");
+        //read
+        console.log(p.getID());
+        console.log(p.getName());
+    </script>
+</body>
+</html>
