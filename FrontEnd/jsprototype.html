@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Prototype</title>
+</head>
+<body><center>
+    <script>
+        //function without prototype
+        function customer()
+        {
+            ticket_no=1001;
+            studentname="Suresh";
+        }
+        var c=new customer();
+        //new property (added to the object s)
+        c.ticket_no=1001;
+        document.write(c.ticket_no+"<br>");
+        //When other objects are created they cannot access marks
+        var c1=new customer();
+        document.write(c1.customer+"<br>");
+
+        //function cus
+        function cus()
+        {
+            this.cusid=101;
+            this.cusname="rajesh";
+        }
+        //prototype- is automatically attached to the function
+        cus.prototype.booking="Hotel";
+        
+        //create an instance - constructor function - cus() - function is loaded in the memory
+        var cusdetails=new cus();
+        document.write(cusdetails.booking+"<br>");
+        cus.prototype={booking:"car"};
+        var cusdetails1=new cus();
+        document.write(cusdetails1.booking+"<br>");
+        var cusdetails2=new cus();
+        document.write(cusdetails2.booking+"<br>");
+
+        cus.prototype.GetDetails=function()
+        {
+            //var empdetails3=new emp();
+           return this.cusid + " " +this.cusname +" "+ this.booking;
+            
+        }
+        const cus1=new cus();
+        document.write(cus1.GetDetails()+"<br>");
+    
+    </script>
+   </center> 
+</body>
+</html>
