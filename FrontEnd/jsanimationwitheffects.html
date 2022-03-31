@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+<button>Start Animation</button><br>
+<br>
+<img src="assets/img2.jpg" width="100px" height="100px" style="position:absolute;margin-top: 00px;" id="img"/>
+<img src="assets/img1.jpg" width="100px" height="100px" style="position:absolute;margin-top: 200px;" id="img1"/>
+<img src="assets/img3.jpeg" width="100px" height="100px" style="position:absolute;margin-top: 400px;" id="img2"/>
+<img src="assets/img4.jpg" width="100px" height="100px" style="position:absolute;margin-top: 510px;" id="img3"/>
+</body>
+<script> 
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#img1").animate({
+          left: '250px',
+          height: '+=50px',
+          width: '+=50px'
+        });
+      });
+    });
+</script>
+<script> 
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#img").animate({left: '500px'});
+      });
+    });
+    </script>
+<script> 
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#img2").animate({
+          left: '350px',
+          opacity: '0.5',
+          height: '100px',
+          width: '100px'
+        });
+      });
+    });
+    </script> 
+<script> 
+    //toggle
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#img3").animate({
+              height: 'toggle'  
+            });
+          });
+        });
+        </script> 
+</script> 
+</head>
+</html>
