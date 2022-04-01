@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Accordion</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/le-frog/jquery-ui.css"
+         rel = "stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+ // $( function() {
+  //  $( "#accordion" ).accordion();
+ // } );
+  $(function() {
+            $( "#accordion" ).accordion({
+               collapsible: true
+          });
+         });
+  </script>
+  <style>
+    #accordion{
+      font-size: 14px;
+      background-color: rgb(213, 231, 231);
+      color:rgb(88, 24, 207);
+      text-align: center;
+      font-family: fantasy;
+      border-radius: 20px;
+    }
+ </style>
+ 
+</head>
+</pre>
+<center><h1>Welcome to booking.com</h1></center>
+<div id="accordion">
+  <h3>Details</h3>
+  <div>
+    <img src="assets/proimg4.png" alt="image" width="150" height="150">
+    <pre>
+      Save time, save money!
+      Sign up and we'll send the best deals to you
+      click here to login and register
+    </pre>
+  </div>
+  <h3>Flight booking</h3>
+  <div>
+    <img src="assets/proimg9.jpg" alt="image" width="150" height="150">
+    <pre>
+      Compare and book flights with ease
+      Discover your next dream destination
+    </pre>
+  </div>
+  <h3>Hotel Booking</h3>
+  <div>
+    <img src="assets/img10.jpg" alt="image" width="150" height="150">
+    <pre>
+      Your entire holiday in one click!
+      Book flight + hotel
+      In collaboration with  
+    </pre>
+  </div>
+  <h3>car hiring</h3>
+  <div>
+    <img src="assets/images.jpg" alt="image" width="150" height="150">
+    <pre>
+      Car hire for any kind of trip
+      Compare deals from the biggest car hire companies
+    </pre>
+  </div>
+</div>
+</body>
+</html>
