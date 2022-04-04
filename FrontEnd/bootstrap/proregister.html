@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="proregister.css">
+</head>
+<header>
+    <div class="main">
+        <ul>
+            <li><a href='homepage.html'>Home</a></li>
+        </ul>
+    </div>
+    
+</header>
+<style>
+  body
+    {
+      background: #1f4037;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+</style>
+
+</head>
+<body>
+  <div class="registration-form">
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+      <p>Name:</p>
+      <input type="name" name="Name" placeholder="Name", required>
+      <p>Email:</p>
+      <input type="email" name="email" placeholder="email", required>
+      <p>Phone:</p>
+      <input type="phone" name="phone" placeholder="phone", required>
+      <p>Address:</p>
+      <input type="address" name="address" placeholder="address", required>
+      <p>Gender:</p>
+      <input type="radio" id="male" name="male" value="male">
+      <label for="male">male</label>
+    <input type="radio" id="female" name="female" value="female">
+    <label for="female">female </label><br>
+    <p>Date and Time:</p>
+    <input type="datetime-local" id="time" name="time" required>
+    <p>Password:</p>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+    <button type="submit" class="signupbtn">Sign Up</button>
+  </form>
+
+   
+</body>
+</head>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <title>Welcome to CG VAK</title>  
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+  <body>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" >  
+        <div class="container-fluid">  
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+          </button>
+            <a class="navbar-brand" href="#">Booking.com</a>  
+          </div>
+           
+            <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">  
+            <li class="active"><a href="#">Home</a></li>  
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Bookings <span class="caret"></span></a>  
+              <ul class="dropdown-menu">  
+                <li><a href="#">Domestic Flight bookings</a></li> 
+                <li><a href="#">International Flight bookings</a></li>
+                <li><a href="#">Train bookings</a></li>  
+                <li><a href="#">Hotel Bookings</a></li>  
+            
+              </ul>  
+            </li>  
+            <li><a href="https://www.booking.com">About Us</a></li>  
+            <li><a href="https://www.booking.com/">Contact     <span class="bi bi-headset"></span></a></li>  
+          </ul> 
+          <ul class="nav navbar-nav navbar-right">  
+            <li><a href="proregister.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>  
+            <li><a href="prologin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>  
+          </ul>
+        </div> 
+        </div> 
+    </nav>
+       <br>
+    <br>
+    <div class="container-fluid">  
+      
+        <!--data-ride="carousel"-a slideshow for cycling through a series of content-->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">  
+          <!-- Indicators -->  
+          <ol class="carousel-indicators">  
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>  
+            <li data-target="#myCarousel" data-slide-to="1"></li>  
+            <li data-target="#myCarousel" data-slide-to="2"></li>  
+          </ol>  
+        
+          <div class="carousel-inner" role="listbox">  
+
+            <div class="item active" style="background-color: rgb(216, 219, 223);">  
+              <center><img src="assets/proimg9.jpg" alt="booking" width="850" height="500"></center>
+              <h3 style="text-align: center;">Flight Bookings</h3>  
+            <p style="text-align: center;">Compare and book flights with ease. Discover your next dream destination</p>    
+            </div>  
+        
+            <div class="item" style="background-color: rgb(216, 219, 223)">  
+              <center><img src="assets/train.jpg" alt="Bookings" width="850" height="500"> </center>
+              <h3 style="text-align: center;">Train Bookings</h3>  
+            <p style="text-align: center;">Booking.com is the leading portal for booking IRCTC train tickets online which is offering the most convenient ways to book train tickets, check train schedule.</p>   
+            </div>  
+            
+            <div class="item" style="background-color: rgb(216, 219, 223);">  
+                <center><img src="assets/hotel.jpg" alt="Bookings" width="850" height="500"> </center>
+                
+              <h3 style="text-align: center;">Hotel</h3>  
+            <p style="text-align: center;">Book at Over 900,000 Hotels Worldwide now. Quick, Easy Booking. Great Rates. Choose From a Wide Range of Properties Which Booking.com Offers! List Your Property.</p>    
+            </div>  
+          </div>  
+        
+          <!-- Left and right controls -->  
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">  
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>  
+            <span class="sr-only">Previous</span> <!--screen readers--> 
+          </a>  
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> 
+            <!--
+    As per the bootstrap document, adding aria-hidden="true" tells assistive technologies to skip the modal's DOM elements, 
+    which explains the presence of aria-hidden=true in the main modal div .--> 
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>  
+            <span class="sr-only">Next</span>  
+          </a> 
+      
+      </div> 
+      </div><!-- corousel end --> 
+      </head>
+      </html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Autocomplete functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            var autocomp  =  [
+               "Domestic Flight",
+               "International Flight",
+               "Hotel",
+               "Train",
+               "Bus",
+               "Car Rental",
+               "bike Rental",
+            ];
+            $( "#automplete-1" ).autocomplete({
+               source: autocomp,
+               autoFocus:true,
+              minLength:2,   
+               delay:100,   
+            });
+         });
+      </script>
+   </head>
+<style>   
+   body
+   {
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+   }
+   </style>
+       <center>
+       <h1>Booking.com</h1>
+       <pre>
+        A lifetime of discounts? It's Genius.
+        Get rewarded for your travels. 
+        unlock instant savings of 10% or more with a free Booking.com.
+    
+    </pre>
+      <!-- HTML --> 
+      <div class = "ui-widget">
+         <p><em>Enter Booking Type </em></p>
+         <label for = "automplete-1">Type Here </label>
+         <input id = "automplete-1">
+      </div>
+      </center>
+   </body>
+   <center><p>Journey Date: <input type = "text" id = "datepicker-1"></p></center>   <hr>
+   <script>
+    $(function() {
+       $( "#datepicker-1" ).datepicker();
+    });
+    </script>
+    <body>
+    <div id = "dialog" 
+    title = "Hello Customer">Welcome to Booking.com</div>
+ <button id = "opener">WebPage</button>
+ <hr>
+ <div id = "dialog1"
+    title = "Hello...">one way or two way</div>
+ <button id = "opener1">Details</button>
+ <script>
+    $(function() {
+       $( "#dialog" ).dialog({
+          autoOpen: false,  
+       });
+       $( "#opener" ).click(function() {
+          $( "#dialog" ).dialog( "open" );
+       });
+    });
+ </script>
+
+<script>
+$(function() {
+  $( "#dialog1" ).dialog({
+     autoOpen: false, 
+     hide: "blind",
+     show : "slide", //blind,bounce,clip,drop,explode,fade,fold,highlight,scale,shake,transfer
+     height: 200      
+  });
+  $( "#opener1" ).click(function() {
+     $( "#dialog1" ).dialog( "open" );
+  });
+});
+</script>
+</html>
