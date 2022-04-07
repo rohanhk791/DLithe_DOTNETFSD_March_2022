@@ -1,10 +1,10 @@
 .bgimg{
-    background-image: url(assets/web1.jpg);
+    background-image: url(assets/1.jpg);
     background-size: 100% 100%;
     background-attachment: fixed;
 	background-size:cover;
     width: 100%;
-    height: 700px;
+    height: 100%;
 }
 .banner .navbar-brand{
 	color: #fff;
@@ -28,24 +28,33 @@
 	box-sizing: border-box;
 }
 .headerset h1{
-	text-align: middle;
-    margin-left:65%;
+	text-align: left;
+    margin-left:35%;
 	transform: translateX(-50%);
-	font-size: 2.5em;
+	font-size: 4.1em;
 	font-weight: 700;
 	color: #fff;
 	letter-spacing: 2px;
 }
-.headerset p{
+.headerset h2{
 	font-size: 2em;
-	margin-left:25%;
+	text-align: left;
+	margin-left:17%;
 	font-weight: 500;
-	color: #aaa;
+	color: rgb(255, 248, 248);
+	letter-spacing: 2px;
+}
+.headerset h3{
+	font-size: 2em;
+	text-align: left;
+	margin-left:0%;
+	font-weight: 500;
+	color: rgb(255, 248, 248);
 	letter-spacing: 2px;
 }
 .headerset button{
-	margin-left:49%;
-	transform: translateX(-50%);
+	margin-left:0%;
+	transform: translateX(-25%);
 	color: #fff;
 	background: #e91d43;
 	padding:10px 20px; 
@@ -83,4 +92,31 @@
 	padding: 10px;
 	font-size: 18px;
 	color: #020202 !important;
+}
+.section {
+	background-image: url(assets/2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+	background-size:cover;
+    width: 100%;
+    height: 100%;
+
+}
+.section1 {
+	background-image: url(assets/3.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+	background-size:cover;
+    width: 100%;
+    height: 100%;
+
+}
+.section2 {
+	background-image: url(assets/4.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+	background-size:cover;
+    width: 100%;
+    height: 100%;
+
 }
