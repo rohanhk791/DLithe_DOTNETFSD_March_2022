@@ -6,20 +6,20 @@
     width: 100%;
     height: 100%;
 }
-.banner .navbar-brand{
+.navbar-brand{
 	color: #fff;
 	font-size:1.8em;
 	font-weight: 700;
 	margin-left: 10%;
 }
-.banner .nav{
+.nav-iteam{
 	margin-right:10%; 
 }
-.banner .nav li a{
+.nav-iteam li a{
 	color:#aaa;
 	font-size: 1.2em;
 }
-.banner .info{
+.info{
 	margin-top:15%;
 	transform: translateY(-15%);
 }
@@ -53,7 +53,7 @@
 	letter-spacing: 2px;
 }
 .headerset button{
-	margin-left:0%;
+	margin-left:14rem !important;
 	transform: translateX(-25%);
 	color: #fff;
 	background: #e91d43;
@@ -64,9 +64,17 @@
 .headerset button:hover{
 	background: #cf4271;
 }
+.section {
+	background-image: url(assets/2.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+	background-size:cover;
+    width: 100%;
+    height: 100%;
+}
 .ourservices{
 	padding: 20px 0px 20px;
-	height: 750px;
+	height: 400px;
 }
 .ourservices h1{
 	color:#ffffff;
@@ -93,15 +101,6 @@
 	font-size: 18px;
 	color: #020202 !important;
 }
-.section {
-	background-image: url(assets/2.jpg);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-	background-size:cover;
-    width: 100%;
-    height: 120%;
-
-}
 .section1 {
 	background-image: url(assets/3.jpg);
     background-size: 100% 100%;
@@ -109,7 +108,6 @@
 	background-size:cover;
     width: 100%;
     height: 100%;
-
 }
 .section1 h1{
 	margin: 5px;
@@ -144,7 +142,7 @@
 	font-size: 17px;
 	color: #000000 !important;
 }
-.rowsetting1{
+.rowsetting1 {
 	margin: 20%;
 	margin: 60px 0px !important;
 
@@ -178,26 +176,28 @@
     background-attachment: fixed;
 	background-size:cover;
     width: 100%;
-    height: 90%;
+    height: 100%;
 }
 
 .circle {
-	background: #9c8fb4;
+	background: transparent;
 	border: 0.1875em solid #000000;
 	border-radius: 50%;
-	box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+	box-shadow: 0.4em 4em 0 0 rgba(15, 28, 63, 0.125);
 	height: 15em;
 	width: 15em;
   }
 
   .set h1{
-	margin: 20px;
+	text-align: center;
+	margin-top: 20px;
 	font-weight: bold;
 	font-size: 50px;
 	color: #000000 !important;
 }
 
-.set p{
+.set h2{
+	text-align: center;
 	padding: 10px;
 	font-size: 18px;
 	font-weight: bold;
@@ -216,6 +216,7 @@
 	font-weight: bold;
 	color: #ffffff !important;
 }
+
 .ourservice h2{
 	padding: 5px;
 	font-size: 50px;
@@ -230,6 +231,33 @@
 	background-size:cover;
     width: 100%;
     height: 100%;
+	margin-bottom: 50px;
+}
+
+.section3 img{
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ourservice11 h1{
+	text-align: center;
+	margin: 20px;
+	font-weight: bold;
+	font-size: 50px;
+	color: #000000 !important;
+}
+.ourservice11 pre{
+	padding: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000 !important;
+}
+.ourservice11 p{
+	padding: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #000000 !important;
 }
 .section4 {
 	background-image: url(assets/6.jpg);
@@ -238,6 +266,12 @@
 	background-size:cover;
     width: 100%;
     height: 100%;
+}
+.section4 img{
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .service h1{
 	text-align: center;
@@ -272,17 +306,17 @@
 }
 .service1 h1{
 	text-align: center;
-	margin: 20px;
+	margin: 30px;
 	font-weight: bold;
 	font-size: 50px;
 	color: #020202 !important;
 }
 
-.service1 pre{
+.service1 p{
 	text-align: center;
-	margin: 18px;
-	font-weight: normal;
-	font-size: 25px;
+	margin: 30px;
+	font-weight: 600;
+	font-size: 20px;
 	color: #020202 !important;
 }
 
@@ -337,7 +371,7 @@
 	background: #4ABEBB;
 	color: #FFFFFF;
 	transition: width .35s ease-in-out,
-	  background .35s ease-in-out;
+	background .35s ease-in-out;
   }
   
   .subscription.done .submit-email {
