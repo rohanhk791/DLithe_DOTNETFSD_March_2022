@@ -1,0 +1,15 @@
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\bin\Debug\net6.0\sample.exe
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\bin\Debug\net6.0\sample.deps.json
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\bin\Debug\net6.0\sample.runtimeconfig.json
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\bin\Debug\net6.0\sample.dll
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\bin\Debug\net6.0\sample.pdb
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\obj\Debug\net6.0\sample.csproj.AssemblyReference.cache
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\obj\Debug\net6.0\sample.GeneratedMSBuildEditorConfig.editorconfig
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\obj\Debug\net6.0\sample.AssemblyInfoInputs.cache
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\obj\Debug\net6.0\sample.AssemblyInfo.cs
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\obj\Debug\net6.0\sample.csproj.CoreCompileInputs.cache
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\obj\Debug\net6.0\sample.dll
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\obj\Debug\net6.0\refint\sample.dll
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\obj\Debug\net6.0\sample.pdb
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\obj\Debug\net6.0\sample.genruntimeconfig.cache
+G:\DLithe_DOTNETFSD_March_2022\C#\sample\obj\Debug\net6.0\ref\sample.dll
